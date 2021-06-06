@@ -22,7 +22,7 @@
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="https://www.google.com/">tindog</a>
+          <a class="navbar-brand" href="#">tindog</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,7 +41,7 @@
                 <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact</a>
+                <a id="contact" class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#pricing">Pricing</a>
@@ -177,6 +177,7 @@
               <p>5 Matches Per Day</p>
               <p>10 Messages Per Day</p>
               <p>Unlimited App Usage</p>
+              <p>-</p>
               <button
                 class="btn btn-block btn-outline-dark btn-lg"
                 type="button"
@@ -196,6 +197,7 @@
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
+              <p>-</p>
               <button class="btn btn-block btn-dark btn-lg" type="button">
                 Sign Up
               </button>
@@ -209,10 +211,10 @@
               <h2>₹7,500 / mo</h2>
             </div>
             <div class="card-body">
-              <p>Pirority Listing</p>
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
+              <p>Priority Listing</p>
               <button class="btn btn-block btn-dark btn-lg" type="button">
                 Sign Up
               </button>
@@ -261,11 +263,7 @@
       ></a>
       <p>© Copyright 2021 TinDog</p>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -280,5 +278,10 @@
       src="https://kit.fontawesome.com/c0e3c3b015.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#contact").click(()=>{
+        $("html, body").delay(100).animate({ scrollTop: $('#footer').offset().top }, 1000);
+      });
+      </script>
   </body>
 </html>
